@@ -2,8 +2,8 @@
 Construction stages classification
 
 ## Dataset 
-The dataset consists of 4 cameras. Each camera captures 10 sequences/structures such as each sequence has 87 timestamps
-However, not all of these images are labelled. The ones without labels will be removed from data loader
+The dataset consists of 4 cameras. Each camera captures 10 sequences (structures) such as each sequence has 87 timestamps
+However, not all of these images are labelled. The ones without labels will be removed from dataset
 
 ## Splitting dataset
 Generally, we can split them in ratio of 6-2-2 or 8-1-1. In this assigment, I want to use the latter approach since I believe that we'd have too few images for training if applying 6-2-2.
