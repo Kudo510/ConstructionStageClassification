@@ -15,7 +15,9 @@ I used RestNet50 as the backbone and only add a linear layer at the end to adjus
 ```python train.py --train --num_epoch 200 --batch_size 4 --lr 0,005```
 ### Run the evaluation to see how well the model performs on test set. 
 The accuracy = accurate prediction / number of images in test set. I trained for 300 epochs and get the accuray of 99.62%
+
 ```python train.py --test```
+
 ### Test a specific image from the test set 
 ```python test.py --idx 1```
 
