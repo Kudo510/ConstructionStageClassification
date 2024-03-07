@@ -6,7 +6,7 @@ The dataset consists of 4 cameras. Each camera captures 10 sequences/structures 
 However, not all of these images are labelled. The ones without labels will be removed from data loader
 
 ## Splitting dataset
-Generally, we can split them in ratio of 6-2-2 or 8-1-1. In this assigment, I want to use the latter approach since I i think we'd have too few images for training if applying 6-2-2.
+Generally, we can split them in ratio of 6-2-2 or 8-1-1. In this assigment, I want to use the latter approach since I believe that we'd have too few images for training if applying 6-2-2.
 For each camera I randomly choose 8 sequence for training, 1 for testing and 1 for validation. So overall, i use 36 sequences for training, 4 for validation and 4 for testing 
 
 ## Task 1
