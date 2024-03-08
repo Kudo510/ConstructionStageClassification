@@ -23,18 +23,6 @@ class MyViT(nn.Module):
         # Super constructor
         super(MyViT, self).__init__()
         
-        # # Attributes
-        # self.chw = chw # ( C , H , W )
-        # self.n_patches = n_patches
-        # self.n_blocks = n_blocks
-        # self.n_heads = n_heads
-        # self.hidden_d = hidden_d
-        
-        # # Input and patches sizes
-        # assert chw[1] % n_patches == 0, "Input shape not entirely divisible by number of patches"
-        # assert chw[2] % n_patches == 0, "Input shape not entirely divisible by number of patches"
-        # self.patch_size = (chw[1] / n_patches, chw[2] / n_patches)
-
         # 0) conv2 layer - resize image to (N, 3, 256,256 ) to (N,3,8,8)
         self.layer_preprocess = nn.Sequential(
             nn.Conv2d(in_channels=3, out_channels=32, kernel_size=5, stride=4, padding=1),
