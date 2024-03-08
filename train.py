@@ -5,7 +5,6 @@ import numpy as np
 import glob
 from torch.utils.data import DataLoader
 from tqdm import tqdm, trange
-import torch
 from torch.optim import Adam
 from torch.nn import CrossEntropyLoss
 import pandas as pd
